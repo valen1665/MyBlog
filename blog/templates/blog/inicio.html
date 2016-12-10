@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyBlogDjango</title>
+</head>
+<body>
+	<div>
+		<h1> Django Girls Blog</h1> 
+	</div>
+	<section>
+			{% for articulo in query %}
+
+			<!-- {{articulo}} -->
+			<article>
+					<h1>{{articulo.title}}</h1>
+					<p>{{articulo.text}}</p>
+					<time>{{articulo.created_Date}}</time>
+			</article>
+
+			{% endfor %}
+
+
+
+	</section>
+
+
+</body>
+</html>
